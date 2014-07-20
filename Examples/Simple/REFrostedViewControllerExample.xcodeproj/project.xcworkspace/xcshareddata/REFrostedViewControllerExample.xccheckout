@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>9A2DB975-7967-4B8C-82D0-7E6DCB642616</string>
+	<string>19D6BAF4-B6DB-4224-812A-C4A04F3EB5EC</string>
 	<key>IDESourceControlProjectName</key>
 	<string>REFrostedViewControllerExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>802A2D85-B167-415C-8C00-668545D16152</key>
-		<string>ssh://github.com/romaonthego/REFrostedViewController.git</string>
+		<key>679AF31F-310C-4D23-979F-D48464EE9604</key>
+		<string>https://github.com/Taporatory/REFrostedViewController.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Examples/Simple/REFrostedViewControllerExample.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>802A2D85-B167-415C-8C00-668545D16152</key>
+		<key>679AF31F-310C-4D23-979F-D48464EE9604</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/romaonthego/REFrostedViewController.git</string>
+	<string>https://github.com/Taporatory/REFrostedViewController.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>802A2D85-B167-415C-8C00-668545D16152</string>
+	<string>679AF31F-310C-4D23-979F-D48464EE9604</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>802A2D85-B167-415C-8C00-668545D16152</string>
+			<string>679AF31F-310C-4D23-979F-D48464EE9604</string>
 			<key>IDESourceControlWCCName</key>
 			<string>REFrostedViewController</string>
 		</dict>

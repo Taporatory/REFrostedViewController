@@ -71,6 +71,7 @@
         UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:self.view.bounds];
         toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         toolbar.barStyle = (UIBarStyle)self.frostedViewController.liveBlurBackgroundStyle;
+        toolbar.barTintColor = self.frostedViewController.liveBlurBackgroundStyle == REFrostedViewControllerLiveBackgroundStyleLight? [UIColor whiteColor] : [UIColor blackColor];
         [self.containerView addSubview:toolbar];
     } else {
         self.backgroundImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
@@ -180,28 +181,40 @@
     };
     
     if (self.frostedViewController.direction == REFrostedViewControllerDirectionLeft) {
-        [UIView animateWithDuration:self.frostedViewController.animationDuration animations:^{
+        [UIView animateWithDuration:self.frostedViewController.animationDuration
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
             [self setContainerFrame:CGRectMake(0, 0, self.frostedViewController.calculatedMenuViewSize.width, self.frostedViewController.calculatedMenuViewSize.height)];
             [self setBackgroundViewsAlpha:self.frostedViewController.backgroundFadeAmount];
         } completion:completionHandler];
     }
     
     if (self.frostedViewController.direction == REFrostedViewControllerDirectionRight) {
-        [UIView animateWithDuration:self.frostedViewController.animationDuration animations:^{
+        [UIView animateWithDuration:self.frostedViewController.animationDuration
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
             [self setContainerFrame:CGRectMake(self.view.frame.size.width - self.frostedViewController.calculatedMenuViewSize.width, 0, self.frostedViewController.calculatedMenuViewSize.width, self.frostedViewController.calculatedMenuViewSize.height)];
             [self setBackgroundViewsAlpha:self.frostedViewController.backgroundFadeAmount];
         } completion:completionHandler];
     }
     
     if (self.frostedViewController.direction == REFrostedViewControllerDirectionTop) {
-        [UIView animateWithDuration:self.frostedViewController.animationDuration animations:^{
+        [UIView animateWithDuration:self.frostedViewController.animationDuration
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
             [self setContainerFrame:CGRectMake(0, 0, self.frostedViewController.calculatedMenuViewSize.width, self.frostedViewController.calculatedMenuViewSize.height)];
             [self setBackgroundViewsAlpha:self.frostedViewController.backgroundFadeAmount];
         } completion:completionHandler];
     }
     
     if (self.frostedViewController.direction == REFrostedViewControllerDirectionBottom) {
-        [UIView animateWithDuration:self.frostedViewController.animationDuration animations:^{
+        [UIView animateWithDuration:self.frostedViewController.animationDuration
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
             [self setContainerFrame:CGRectMake(0, self.view.frame.size.height - self.frostedViewController.calculatedMenuViewSize.height, self.frostedViewController.calculatedMenuViewSize.width, self.frostedViewController.calculatedMenuViewSize.height)];
             [self setBackgroundViewsAlpha:self.frostedViewController.backgroundFadeAmount];
         } completion:completionHandler];
@@ -229,7 +242,10 @@
     }
     
     if (self.frostedViewController.direction == REFrostedViewControllerDirectionLeft) {
-        [UIView animateWithDuration:self.frostedViewController.animationDuration animations:^{
+        [UIView animateWithDuration:self.frostedViewController.animationDuration
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
             [self setContainerFrame:CGRectMake(- self.frostedViewController.calculatedMenuViewSize.width, 0, self.frostedViewController.calculatedMenuViewSize.width, self.frostedViewController.calculatedMenuViewSize.height)];
             [self setBackgroundViewsAlpha:0];
         } completion:^(BOOL finished) {
@@ -240,7 +256,10 @@
     }
     
     if (self.frostedViewController.direction == REFrostedViewControllerDirectionRight) {
-        [UIView animateWithDuration:self.frostedViewController.animationDuration animations:^{
+        [UIView animateWithDuration:self.frostedViewController.animationDuration
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
             [self setContainerFrame:CGRectMake(self.view.frame.size.width, 0, self.frostedViewController.calculatedMenuViewSize.width, self.frostedViewController.calculatedMenuViewSize.height)];
             [self setBackgroundViewsAlpha:0];
         } completion:^(BOOL finished) {
@@ -251,7 +270,10 @@
     }
     
     if (self.frostedViewController.direction == REFrostedViewControllerDirectionTop) {
-        [UIView animateWithDuration:self.frostedViewController.animationDuration animations:^{
+        [UIView animateWithDuration:self.frostedViewController.animationDuration
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
             [self setContainerFrame:CGRectMake(0, -self.frostedViewController.calculatedMenuViewSize.height, self.frostedViewController.calculatedMenuViewSize.width, self.frostedViewController.calculatedMenuViewSize.height)];
             [self setBackgroundViewsAlpha:0];
         } completion:^(BOOL finished) {
@@ -262,7 +284,10 @@
     }
     
     if (self.frostedViewController.direction == REFrostedViewControllerDirectionBottom) {
-        [UIView animateWithDuration:self.frostedViewController.animationDuration animations:^{
+        [UIView animateWithDuration:self.frostedViewController.animationDuration
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
             [self setContainerFrame:CGRectMake(0, self.view.frame.size.height, self.frostedViewController.calculatedMenuViewSize.width, self.frostedViewController.calculatedMenuViewSize.height)];
             [self setBackgroundViewsAlpha:0];
         } completion:^(BOOL finished) {
